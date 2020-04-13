@@ -1,0 +1,226 @@
+img{
+	height: 30%;
+	width: 20%;
+}
+.required{
+	color: red;
+}
+.h1{
+	display: flex;
+	font-size: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.h2{
+	display: flex;
+	justify-content: center;
+}
+li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+form ul li label{
+	float: left;
+	clear: left;
+	width: 120px;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+form ul li input, select {
+	display: flex;
+	float: left;
+	margin-bottom: 10px;
+	height: 20px;
+}
+#f1{
+	border-style: solid;
+	border-color: dodgerblue;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin:0% 15% ;
+	background-color: dodgerblue;
+}
+#f1 h3{
+	background-color: dodgerblue;
+	color:white;
+	padding-left: 10px;
+}
+#f1 .f1{
+	background-color: white;
+	padding :10px 0px 10px 10px;
+}
+#f1 .f2{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0px 20px 10px;
+}
+#f1 .f3{
+	border-style: solid none;
+	background-color: white;
+	border-color: grey;
+	padding: 10px 0px 20px 10px;
+}
+#f1 .f4{
+	background-color: white;
+	border-style: none none solid; 
+	border-color: grey;
+	padding: 10px 0px 20px 10px;
+}
+#f1 .f5{
+	background-color: white;
+	padding: 10px 0px 20px 10px;
+}
+.space{
+	height: 10px;
+}
+#f2{
+	border-style: solid;
+	border-color: red;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin:0% 15% ;
+	background-color: red;
+}
+#f2 h3{
+	color: white;
+	padding-left: 10px;
+}
+#f2 .f1{
+	background-color: white;
+}
+#f3{
+	border-style: solid;
+	border-color: springgreen;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin:0% 15% ;
+	background-color: springgreen;
+}
+#f3 h3{
+	color: white;
+	padding-left: 10px;
+}
+#f3 .f1{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+
+}
+#f3 .f2 h4{
+	display: flex;
+	text-align: left;
+	border-style: solid;
+	border-color: springgreen;
+	background-color: springgreen;
+	color: white;
+	padding-left: 10px;
+	margin-top: 0px;
+	line-height: 30px;
+}
+#f3 .f2 {
+	margin: 15px;
+	float: left;
+	border-style: solid ;
+	border-color: springgreen;
+	background-color: white;
+	line-height: 20px;
+
+}
+#f3 .f2-1{
+	background-color: white;
+	padding-bottom: 10px;
+}
+#f3 .f2-1 label{
+	float: left;
+	clear: left;
+	width: 120px;
+	margin-bottom: 10px;
+	text-align: right;
+	padding-right: 10px;
+}
+#f3 .f2-1 input{
+	float: left;
+
+}
+#f3 .f7{
+	background-color: white;
+
+}
+#f4{
+	border-style: solid;
+	border-color: blue;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin:0% 15% ;
+	background-color: blue;
+
+}
+#f4 h3{
+	color: white;
+	padding-left: 10px;
+}
+#f4 .f1{
+	background-color: white;
+}
+#f4 .f1 label{
+	float: left;
+	width: 120px;
+
+	padding-right: 10px;
+}
+#f4 .f1 select{
+	float: left;
+}
+#f4 .f1 ul{
+	display: flex;
+	flex-direction: row;
+}
+#f5{
+	border-style: solid;
+	border-color: indigo;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin:0% 15% ;
+	background-color: indigo;
+}
+#f5 h3{
+	color: white;
+	padding-left: 10px;
+}
+#f5 .f1{
+	background-color: white;
+}
+#f5 .f1 label{
+	float: left;
+	width: 120px;
+	padding-right: 10px;
+}
+#f5 .f1 select{
+	width: 70%;
+}
+.table{
+	width:70%;
+	float: right;
+	clear: right;
+	margin-right: 90px;
+}
+.subject{
+	width:50%;
+	text-align: center;
+}
+.grade{
+	width:50%;
+	text-align: center;
+}
+.submit{
+	margin:15px;
+	text-align: center;
+}
