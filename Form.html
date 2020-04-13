@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Register</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header>
+		<div class="h1"><img src="suc_logo.jpg">网上报名 Online Registration</div>
+	</header>
+	<div class="h2"><p>Instructions:<br>
+		1.This form contains five (5) parts, please fill out this form before submission.<br>
+		2.The required fields are marked in red asterisk (<span class="required">*</span>).<br>
+		3.Kindly please check and make sure contact informations are correct, our staff will use these information to get in touch with you.<br>
+		4.No amendment is allowed after you submit your application.<br><br>
+		注意事项：<br>
+		1.这个报名表格共有五大项目，请仔细填写。<br>
+		2.必填资料已被标上红色星号（<span class="required">*</span>）。<br>
+		3.我们将会使用您所提供的联络方式与您联络，请确保联络资料正确无误。<br>
+		4.表格提交后将无法再修改所提交的资料。</p>
+	</div>
+	<div id ="f1">
+		<h3>1. 入学学期 & 资料 - Intake & choices</h3>
+		<div class="f1">
+			<h4>申请入学梯次 - Intake and programme</h4>
+			请选择入学年份和入学梯次。<br>
+			Please select intake year and intake.
+			<div class="f2">
+				<form>
+				<ul>
+					<li style="float: left;"><label for="date">入学年份与梯次<span class="required">*</span><br>Year/Intake</label></li>
+						<li style="float: left;"><input id="May" type="radio" name="date" value="2020/May"> 2020/May</li>
+						<li style="float: left;"><input id="Sept" type="radio" name="date" value="2020/Sept"> 2020/Sep</li>
+				</ul>
+				</form>
+			</div>	
+		</div>
+
+		<div class="f3">
+			<h4>申请科系 - Choice of Programme</h4>
+			<form>
+				<ul>
+					<li><label for="subject1" >第一志愿<span class="required">*</span><br>1st Choice</label>
+						<select name="subject">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="IT">Information Technology</option>
+						<option value="CS">Computer Science</option>
+						<option value="AD">Art and Design</option>
+						</select>
+					</li>
+					<li><label for="subject2" >第二志愿<span class="required">*</span><br>2nd Choice</label>
+						<select name="subject">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="IT">Information Technology</option>
+						<option value="CS">Computer Science</option>
+						<option value="AD">Art and Design</option>
+						</select>
+					</li>
+					<li><label for="subject3" >第三志愿<span class="required">*</span><br>3rd Choice</label>
+						<select name="subject">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="IT">Information Technology</option>
+						<option value="CS">Computer Science</option>
+						<option value="AD">Art and Design</option>
+						</select>
+					</li>
+				</ul>
+		</div>	
+		<div class="f4">
+			<h4>申请住宿 - Hostel</h4>
+			<form>
+				<ul>
+					<li style="float: left;"><label for="Hostel" >申请住宿<span class="required">*</span><br> Hostel</label></li>
+						<li style="float: left;"><input id="Yes" type="radio" name="select" value="Yes"> 是 Yes </li>
+						<li style="float: left;"><input id="No" type="radio" name="select" value="No"> 否 No </li>
+				</ul>
+			</form>
+		</div>
+		<div class="f5">
+			<h4>奖贷申请 - Scholarship</h4>
+			<form>
+				<ul>
+					<li><label for="Scholarship" >奖贷申请<span class="required">*</span><br>Scholarship</label></li>
+						<li><select name="Scholarship">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="None">None</option>
+						<option value="AS">Academic Scholarships</option>
+						<option value="CSS">Community Service Scholarships</option>
+						</select></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="space"></div>
+	<div id="f2">
+		<h3>2. 个人资料 - Personal Information</h3>
+		<div class="f1">
+			<form>
+				<ul>
+				<li><label for="cnname">中文姓名<br>Chinese name</label></li>
+					<li><input type="text" name="cnname" size="10" required="required" /></li>
+
+				<li><label for="enname">英文姓名<span class="required">*</span><br>English name</label></li>
+					<li><input type="text" name="enname" size="50" required="required" /></li>
+
+				<li><label for="gender">性别<span class="required">*</span><br>Gender</label></li>
+					<li><input id="gender" type="radio" name="gender" value="Male"/> 
+						<span style="float:left;">男 Male</span>
+						<input id="gender" type="radio" name="gender" value="Female"/> 
+						<span style="float:left;">女 Female</span>
+					</li> 
+
+				<li><label for="dob">出生日期<span class="required">*</span><br>Date of Birth</label></li>
+					<li><input type="date" id="dob" name="dob"  /></li>		
+
+				<li><label for="Nationality" >国籍<span class="required">*</span><br>Nationality</label>
+						<li><select name="Nationality">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="MY">Malaysian</option>
+						<option value="CN">Chinese</option>
+						<option value="IN">Indonesians</option>
+						</select></li>
+					</li>
+
+				<li><label for="IC">身份证件号<span class="required">*</span><br>IC No.</label></li>
+					<li><input type="text" name="IC" size="12" placeholder="001122-00-1111" /></li>	
+
+				<li><label for="Race" >种族<span class="required">*</span><br>Race</label>
+						<li><select name="Race">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="Malay">Malay</option>
+						<option value="Cina">Cina</option>
+						<option value="Indian">Indian</option>
+						</select></li>
+					</li>
+
+				<li><label for="Religion" >宗教<span class="required">*</span><br>Religion</label>
+						<li><select name="Religion">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="None">None</option>
+						<option value="Buddha">Buddha</option>
+						<option value="Islam">Islam</option>
+						<option value="Hindu">Hindu</option>
+						<option value="Christian">Christian</option>
+						<option value="Other">Other</option>
+						</select></li>
+					</li>
+
+				<li><label for="HP">住家电话<br>House Phone</label></li>
+					<li><input type="text" name="HP" size="15" /></li>
+
+				<li><label for="MP">手提电话<span class="required">*</span><br>Mobile Phone</label></li>
+					<li><input type="text" name="MP" size="15" /></li>
+
+				<li><label for="E-mail">电邮<span class="required">*</span><br>E-mail</label></li>
+					<li><input type="email" name="E-mail" size="30" placeholder="abc123@gmail.com" /></li>
+
+				<li><label for="Address">住家地址<span class="required">*</span><br>Address</label></li>
+					<li><input type="text" name="Address" size="90" /><input type="text" name="Address" size="90" /></li>
+
+				<li><label for="Area">地区<span class="required">*</span><br>Area</label></li>
+					<li><input type="text" name="Area" size="30" /></li>
+
+				<li><label for="Postcode">邮编<span class="required">*</span><br>Postcode</label></li>
+					<li><input type="number" name="Postcode" size="5" /></li>
+
+				<li><label for="State" >州属<span class="required">*</span><br>State</label>
+						<li><select name="State">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="Johor">Johor</option>
+						<option value="Kedah">Kedah</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Kuala">Kuala Lumpur</option>
+						<option value="Labuan">Labuan</option>
+						<option value="Melaka">Melaka</option>
+						<option value="Pahang">Pahang</option>
+						<option value="Perak">Perak</option>
+						<option value="Perlis">Perlis</option>
+						<option value="Sabah">Sabah</option>
+						<option value="Sarawak">Sarawak</option>
+						<option value="Selangor">Selangor</option>
+						</select></li>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="space"></div>
+	<div id="f3">
+		<h3>3. 家庭资料 - Family details</h3>
+		<div class="f1">
+			<form>
+				<ul>
+					<li ><label for="Guardian" >监护人<span class="required">*</span><br>Guardian</label></li>
+						<li>
+						<input id="father" type="radio" name="select" value="Yes"><span style="float: left;">父亲 Father </span>
+						<input id="mother" type="radio" name="select" value="No"><span style="float: left;">母亲 Mother</span> 
+						<input id="notparent" type="radio" name="select" value="No"><span style="float: left;">父母非监护人 Guardian not parent</span>
+						</li>
+				</ul>
+			</form>
+				<div class="f2" >
+					<h4>监护人资料-Information of Guardian</h4>
+					<div class="f2-1">
+						<ul>
+							<li><label for="gcnname">中文姓名<br>Chinese name</label></li>
+							<li><input type="text" name="gcnname" size="10" required="required" /></li>
+
+							<li><label for="genname">英文姓名<br>English name</label></li>
+							<li><input type="text" name="genname" size="50" required="required" /></li>
+
+							<li><label for="gic">身份证号<br>IC.No</label></li>
+							<li><input type="text" name="gic" size="50" required="required" /></li>
+
+							<li><label for="gcn">联络电话<br>Contact Number</label></li>
+							<li><input type="text" name="gcn" size="50" required="required" /></li>
+						</ul>
+					</div>
+				</div>
+			<form>	
+				<ul>
+					<li><label for="HAI" >家庭年收入<span class="required">*</span><br>Household annual income</label>
+						<li><select name="HAI">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="RM10000">Less than RM10000</option>
+						<option value="RM29999">RM10000 to RM29999</option>
+						<option value="RM49999">RM30000 to RM49999</option>
+						<option value="RM69999">RM50000 to RM69999</option>
+						<option value="RM70000">More than RM70000</option>
+						</select></li>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="space"></div>
+	<div id="f4">
+		<h3>4. 学历 - Academic qualification</h3>
+		<div class="f1">
+			<ul>
+				<li><label>中学<span class="required">*</span><br>Secondary School</label></li>
+				<li><select name="State">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="Johor">Johor</option>
+						<option value="Kedah">Kedah</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Kuala">Kuala Lumpur</option>
+						<option value="Labuan">Labuan</option>
+						<option value="Melaka">Melaka</option>
+						<option value="Pahang">Pahang</option>
+						<option value="Perak">Perak</option>
+						<option value="Perlis">Perlis</option>
+						<option value="Sabah">Sabah</option>
+						<option value="Sarawak">Sarawak</option>
+						<option value="Selangor">Selangor</option>
+						</select></li>
+
+				<li><input type="text" name="scndschool" size="50" placeholder="Please enter your school name"></li>
+
+				<li><select id="year">
+					<option>Year</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select>
+				</li>
+			</ul>
+			<ul>	
+				<li><label>大专<br>Higher Instituition</label></li>
+				<li><select name="State">
+						<option selected="" value="Default">Click to choose</option>
+						<option value="Johor">Johor</option>
+						<option value="Kedah">Kedah</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Kuala">Kuala Lumpur</option>
+						<option value="Labuan">Labuan</option>
+						<option value="Melaka">Melaka</option>
+						<option value="Pahang">Pahang</option>
+						<option value="Perak">Perak</option>
+						<option value="Perlis">Perlis</option>
+						<option value="Sabah">Sabah</option>
+						<option value="Sarawak">Sarawak</option>
+						<option value="Selangor">Selangor</option>
+						</select></li>
+				
+				<li><input type="text" name="scndschool" size="50" placeholder="Please enter your school name"></li>
+
+				<li><select id="year">
+					<option>Year</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="space"></div>
+	<div id="f5">
+		<h3>5. 入学成绩 - Certificate & Grades</h3>
+		<div class="f1">
+			<ul>
+				<li><label>证书名称<span class="required">*</span><br>Certificate</label></li>
+				<li><select name="Certificate">
+					<option>Select</option>
+					<option>SPM</option>
+					<option>STPM</option>
+					<option>O-Level</option>
+					<option>A-Level</option>
+				</select>
+				</li>
+			</ul>
+			<ul class="table">
+				<table>最少五项科目At Least Five Subject<span class="required">*</span>
+					<tr>
+						<th>#</th>
+						<th class="subject">科目Subject</th>
+						<th class="grade">等级Grade</th>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td><select name="subject">
+							<option>Click to choose</option>
+							<option>Chinese</option>
+							<option>Bahasa Melayu</option>
+							<option>English</option>
+							<option>Science</option>
+							<option>Mathematics</option>
+						</select></td>
+						<td><select name="garde">
+							<option>Click to choose</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td><select name="subject">
+							<option>Click to choose</option>
+							<option>Chinese</option>
+							<option>Bahasa Melayu</option>
+							<option>English</option>
+							<option>Science</option>
+							<option>Mathematics</option>
+						</select></td>
+						<td><select name="garde">
+							<option>Click to choose</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+						</select></td>
+					</tr>
+					<tr>	
+						<td>3.</td>
+						<td><select name="subject">
+							<option>Click to choose</option>
+							<option>Chinese</option>
+							<option>Bahasa Melayu</option>
+							<option>English</option>
+							<option>Science</option>
+							<option>Mathematics</option>
+						</select></td>
+						<td><select name="garde">
+							<option>Click to choose</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td><select name="subject">
+							<option>Click to choose</option>
+							<option>Chinese</option>
+							<option>Bahasa Melayu</option>
+							<option>English</option>
+							<option>Science</option>
+							<option>Mathematics</option>
+						</select></td>
+						<td><select name="garde">
+							<option>Click to choose</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>5.</td>
+						<td><select name="subject">
+							<option>Click to choose</option>
+							<option>Chinese</option>
+							<option>Bahasa Melayu</option>
+							<option>English</option>
+							<option>Science</option>
+							<option>Mathematics</option>
+						</select></td>
+						<td><select name="garde">
+							<option>Click to choose</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+						</select></td>
+					</tr>
+				</table>
+			</ul>
+		</div>
+	</div>
+	<div class="submit"><input type="submit" value="Submit"></div>
+	
+</body>
+</html>
